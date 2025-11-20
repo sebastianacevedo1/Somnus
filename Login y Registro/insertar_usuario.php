@@ -40,7 +40,7 @@ $sql = "INSERT INTO usuarios (correo, usuario, contrasena)
 
 if (mysqli_query($conexion, $sql)) { 
     // Ejecuta la consulta SQL y verifica si se insertó correctamente
-    echo "<script>alert('Registro exitoso'); window.location='index.php';</script>";
+    echo "<script>alert('Registro exitoso'); window.location='registro.php';</script>";
     // Si todo fue bien, muestra un mensaje y redirige al login o página principal
 } else {
     echo "Error: " . mysqli_error($conexion);
