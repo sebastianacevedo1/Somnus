@@ -1,0 +1,96 @@
+/* MODAL FORMULARIO ESTILO SOMNUS */
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6); /* Fondo más oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    backdrop-filter: blur(3px); /* Desenfoque del fondo */
+}
+
+.modal-content {
+    background: #ffffff; /* Fondo claro */
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 420px;
+    max-width: 95%;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3); /* Sombra más definida */
+    animation: fadeIn 0.3s ease-in-out;
+    border-top: 6px solid #0a325a; /* Barra superior decorativa */
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* Botón cerrar con estilo Somnus */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #c32626;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #ff0000;
+}
+
+/* Título del modal */
+.modal-content h2 {
+    color: #0a325a;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Inputs y select más estilizados */
+.modal-content form input,
+.modal-content form select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.modal-content form input:focus,
+.modal-content form select:focus {
+    border-color: #0a325a;
+    box-shadow: 0 0 5px rgba(0,51,102,0.3);
+    outline: none;
+}
+
+/* Botón enviar estilo Somnus */
+.modal-content form button {
+    background: #0a325a;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px 0;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.modal-content form button:hover {
+    background: #0c4175;
+    transform: translateY(-1px);
+}

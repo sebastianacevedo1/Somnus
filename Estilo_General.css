@@ -1,0 +1,113 @@
+/* ==== RESET GENERAL ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* ==== HEADER ==== */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* ==== LAYOUT GENERAL: SIDEBAR + CONTENIDO ==== */
+.container {
+    display: flex;
+    margin-top: 90px; /* debajo del header */
+    height: calc(100vh - 90px);
+}
+
+/* ==== SIDEBAR ==== */
+.sidebar {
+    width: 260px;
+    background-color: #f8fafc;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar a {
+    display: block;
+    background-color: #e6f0fa;
+    color: #003366;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    background-color: #d1e6ff;
+}
+
+/* ==== CONTENIDO PRINCIPAL ==== */
+.content {
+    flex: 1;
+    padding: 30px 40px;
+    overflow-y: auto;
+}
+
+/* ==== TITULOS ==== */
+.content h2 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+/* ==== TABLAS ==== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table th {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* ==== BOTÓN AÑADIR ==== */
+.boton-add {
+    display: inline-block;
+    margin-bottom: 30px;
+    background-color: #003366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.boton-add:hover {
+    background-color: #005bb5;
+}
+
+img{
+    width: 150px;
+}
